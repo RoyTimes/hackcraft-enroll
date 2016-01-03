@@ -27,9 +27,16 @@ router.post('/enroll', function (req, res) {
 	};
 	console.log(data);
 
-	fs.appendFile('namelist.json', data, function(err){
-		if (err) {console.log(err);	res.render('enroll', {err:true});}
-		else {console.log("Data saved");res.render('enroll', {err:false});}
+	fs.appendFile('namelist.json', JSON.stringify(data), 
+		function(err){
+			if (err) {
+				console.log(err);	
+				res.render('enroll', { err: 'true' });
+			}
+			else {
+				console.log("Data saved");
+				res.render('enroll', { err: 'false' });
+			}
 	});
 
 });
