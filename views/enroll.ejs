@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="hackcraft" />
+    <meta name="author" content="Song Zhou" />
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+    <title>HackCraft | Enroll</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/login/main.css" rel="stylesheet" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+
+<body style="font-family:StructrMe;">
+    <p style="font-size:150%;word-spacing:8px; letter-spacing: 1px;text-align:center" class="row col-md-6 col-md-offset-3">
+
+    <% if(err === false) %>
+        <span style="font-size:200%;font-family: YueHei; text-align:center">提交成功!</span><br><br><br>很快就会有工作人员和您联系. 加个微信QQ一类的. 您也可以自行加一下官方QQ群: 489743138 <br><br><br><br>
+    <% } %>
+     <% if(err === true) %>
+        <span style="font-size:200%;font-family: YueHei; text-align:center">提交失败!</span><br><br><br>大概是网络问题，您可以重新提交。如果还是提示失败的话请直接加入官方QQ群:489743138<br><br><br><br>
+    <% } %>
+    <a style="color:white" href="http://hackcraft.ziorix.com/cn/main.html">Back to the official site!</a><br><br><span style="font-size:180%">Go HackCraft!</span></p>
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/login/js/login.js"></script>
+</body>
+
+</html>
